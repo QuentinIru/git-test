@@ -1,0 +1,36 @@
+@import url(reset.css);
+header nav #menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+header nav #menu>li{
+    background-color: lightpink;
+    color: darkred;
+    font-size: 1.8rem;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    font-weight: bold;
+    
+}
+header nav #menu>li:hover{
+    color: white;
+    transition: all 1s ease-in-out;
+}
+header nav #menu li ul{
+    display: none;
+    background-color: rgb(197, 133, 144);
+}
+header nav #menu li:hover ul{
+    display: block;
+   
+}
+header nav #menu li ul li a{
+    text-decoration: none;
+    color: darkred;
+}
+header nav #menu li ul li a:hover{
+    color: white;
+    transition: all ease 1s;
+}  
+
